@@ -9,13 +9,16 @@ class StudentModelViewSet(viewsets.ModelViewSet):
     serializer_class = StudentSerializer
     # authentication_classes = [BasicAuthentication]
     # authentication_classes = [SessionAuthentication]
+    authentication_classes = [TokenAuthentication]
     # permission_classes = [IsAuthenticated]
     # permission_classes = [AllowAny]
     # permission_classes = [IsAdminUser]
-    # permission_classes = [IsAuthenticatedOrReadOnly]
+    permission_classes = [IsAuthenticatedOrReadOnly]
     # permission_classes = [DjangoModelPermissions]
     # permission_classes = [DjangoModelPermissionsOrAnonReadOnly]
     # permission_classes = [MyPermission]
+
+
 
 
 
