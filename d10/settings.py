@@ -122,7 +122,9 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_RATES':{
         'anon':'2/day',
         'user':'5/hour',
-        'jimmi':'3/minute'
+        'jimmi':'3/minute',
+        'viewstu':'5/hour',
+        'modifystu':'2/day'
     }
 }
 
