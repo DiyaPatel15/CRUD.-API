@@ -123,6 +123,10 @@ STATIC_URL = 'static/'
 #     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 # }
 
+REST_FRAMEWORK = {
+    'SEARCH_PARAM': 'query'
+}
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
