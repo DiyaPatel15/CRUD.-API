@@ -13,23 +13,6 @@ class StudentList(ListAPIView):
         return Student.objects.filter(passby=user)
 
 
-# class StudentCreate(CreateAPIView):
-#     queryset = Student.objects.all()
-#     serializer_class = StudentSerializer
-#     throttle_classes = [ScopedRateThrottle]
-#     throttle_scope = 'modifystu'
-#
-# class StudentRetrieve(RetrieveAPIView):
-#     queryset = Student.objects.all()
-#     serializer_class = StudentSerializer
-#     throttle_classes = [ScopedRateThrottle]
-#     throttle_scope = 'viewstu'
-#
-# class StudentDestroy(DestroyAPIView):
-#     queryset = Student.objects.all()
-#     serializer_class = StudentSerializer
-#     throttle_classes = [ScopedRateThrottle]
-#     throttle_scope = 'modifystu'
 
 
 
